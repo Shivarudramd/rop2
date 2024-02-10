@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class calculator {
+public class calculator extends extra
+{
     public static  int add(int a,int b){
         return a+b;
     }
@@ -35,6 +36,16 @@ public class calculator {
                 System.out.println("The Product of the "+a+" and "+b+" is: "+div(a,b));
                 break;
         }
+        System.out.println("\n\nArithmetic operation like \nSQUARE CUBE POWER ");
+        System.out.print("Enter one number for finding Square and cube : ");
+        int a1=in.nextInt();
+        System.out.println("Square of "+a1+"is :"+mySquare(a1));
+        System.out.println("Cube of "+a1+"is :"+myCube(a1));
+        System.out.println("Enter two number for finding power : ");
+        int x=in.nextInt();
+        int y=in.nextInt();
+        myPower(x, y);
+        System.out.println("Power of "+x+" and "+y+"is :"+myPower(x,y));
     }
 }
 
