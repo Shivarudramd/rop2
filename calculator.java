@@ -1,5 +1,6 @@
 import java.util.Scanner;
-public class calculator {
+public class calculator extends Branch 
+{
     public static  int add(int a,int b){
         return a+b;
     }
@@ -35,6 +36,15 @@ public class calculator {
                 System.out.println("The Product of the "+a+" and "+b+" is: "+div(a,b));
                 break;
         }
+        System.out.println("Enter a decimal number :");
+        float b1 = in.nextFloat();
+        System.out.println("Absolute value of this number is :"+myAbsalute(b1));
+        System.out.println("Rounded value of this number is :"+myRound(b1));
+        System.out.println("Unit int Last Place(ult) of number is :"+myUlp(b1));
+        System.out.println("Enter two numbers :");
+        int x = in.nextInt();
+        int y = in.nextInt();
+        System.out.println(("Minimum among ("+x+","+y+") is :"+myMin(x,y)));
     }
 }
 
