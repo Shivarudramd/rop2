@@ -11,6 +11,7 @@ public class Calculator extends extra {
                     System.out.println(number1 + " * " + number2 + " = " + result);
                     result = number1 / number2;
                     System.out.println(number1 + " / " + number2 + " = " + result);
-                
+                mySquare(number1);
+                myCube(number1);
               }
 }
