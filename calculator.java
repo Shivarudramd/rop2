@@ -1,4 +1,4 @@
-public class Calculator extends extra {
+public class calculator extends extra {
         public static void main(String[] args) {
             int number1, number2, result;
             number1=20;
